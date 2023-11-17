@@ -1,16 +1,12 @@
 # ocr_app
 
-A new Flutter project.
+Ứng dụng mobile nhận diện chữ viết từ hình ảnh - OCR Android App using Flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Android:
+minSdkVersion: 21
+targetSdkVersion: 33
+compileSdkVersion: 33
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
