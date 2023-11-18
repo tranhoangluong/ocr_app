@@ -31,6 +31,8 @@ class _LoginScreenState extends State<LoginScreen> {
         final navigator = Navigator.of(context);
         success = 2;
         userEmail = user.email!;
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            content: Text('Bạn đã đăng nhập thành công tài khoản $userEmail')));
         await navigator.push(MaterialPageRoute(
           builder: (BuildContext context) => const HomeScreen(),
         ));
@@ -128,9 +130,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               obscureText: true,
                             ),
                           ),
-                          Center(
-                            child: Text(errorMessage),
-                          ),
                           const SizedBox(
                             height: 40,
                           ),
@@ -172,7 +171,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               TextButton(
                                 onPressed: () async {
                                   _resetPassword(email: _emailController.text);
-                                 ScaffoldMessenger.of(context)
+                                  ScaffoldMessenger.of(context)
                                       .showSnackBar(snackBar);
                                 },
                                 child: const Text('Forgot password?'),
