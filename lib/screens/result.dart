@@ -36,6 +36,7 @@ class _ResultScreenState extends State<ResultScreen> {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(195, 210, 255, 1),
       appBar: AppBar(
+        backgroundColor: Colors.indigo,
         centerTitle: true,
         title: const Text('Result'),
         actions: [

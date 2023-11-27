@@ -363,6 +363,7 @@ class _TranslateScreenState extends State<TranslateScreen> {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(195, 210, 255, 1),
       appBar: AppBar(
+        backgroundColor: Colors.indigo,
         centerTitle: true,
         title: const Text('Translate'),
       ),
